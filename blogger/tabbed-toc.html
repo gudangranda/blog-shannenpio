@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tabbed TOC for Blogger</title>
+    <link href="-toc.min.css" rel="stylesheet">
+    <style>html,body{background:#d5c38d}select,textarea{background:#f0e0ad}</style>
+    <link href="favicon.ico" rel="shortcut icon">
+  </head>
+  <body spellcheck="false">
+    <p>
+      <select id="skins">
+        <option value="224c19">Default</option>
+        <option value="">None</option>
+      </select>
+    </p>
+    <p>
+      <textarea id="settings" placeholder="Settings&hellip;">{
+
+  // `"ltr": for &ldquo;left to right&rdquo; site
+  // `"rtl": for &ldquo;right to left&rdquo; site
+  "direction": "ltr",
+
+  // `1`: ascending
+  // `-1`: descending
+  // `"function_name"`: custom
+  "sort": 1,
+
+  // `0`: will activate the first tab on load
+  // `1`: will activate the second tab on load
+  // `"Autumn"`: will activate a tab with label &ldquo;Autumn&rdquo;
+  "active": 0,
+
+  // `false` to put the widget right before the `&lt;script&gt;` tag or
+  // `"#toc-container"` to put the widget in `&lt;div id="toc-container"&gt;&lt;/div&gt;`
+  "container": false,
+
+  // set to `false` to hide the date
+  // `%Y%`: year
+  // `%M%`: month
+  // `%D%`: day
+  // `%h%`: hour 12
+  // `%m%`: minute
+  // `%s%`: second
+  // `%M~%`: month name
+  // `%D~%`: day name
+  // `%h~%`: hour 24
+  // `%N%`: &ldquo;AM&rdquo; or &ldquo;PM&rdquo;
+  "date": "%M~% %D%, %Y% %h%:%m% %N%",
+
+  // set to `false` or `0` to hide the excerpt
+  "excerpt": false,
+
+  // set to `false` or `0` to hide the image
+  "image": false,
+
+  // the link target, set to `"_blank"` to open link in a new tab
+  "target": false,
+
+  // `0`: load immediatelly
+  // `3000`: load after 3000 milliseconds
+  // `true`: load after everything has finished loading
+  "load": 0,
+
+  // number of posts to be marked as the most recent posts
+  "recent": 7,
+
+  // list of label name to hide
+  // example: `["Autumn", "Spring", "Winter"]`
+  "hide": [],
+
+  "text": {
+    "title": "Table of Content",
+    "loading": "Loading&hellip;",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "days": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "recent": " &lt;sup&gt;New!&lt;/sup&gt;"
+  }
+
+}</textarea>
+      <textarea id="results" placeholder="Results&hellip;"></textarea>
+    </p>
+    <div id="views"></div>
+    <script src="-toc.min.js"></script>
+  </body>
+</html>
